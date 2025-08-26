@@ -1,61 +1,92 @@
 main {
     width: 100%;
-    min-height: 100vh;
-    /* altura da janela*/
-    background-color: #9F9F9F;
+    min-height: 100vh; /* altura da tela inteira */
     display: flex;
     align-items: center;
     justify-content: center;
-    /* alinha no sentido ao contrario dp flex*/
 }
 
-main>div {
-    background-color: #585858;
-    width: 50%;
-    height: 500px;
+main > div {
+    width: 90%;
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+/* Formulário */
+#formulario {
+    background-color: rgb(255, 255, 255);
+    min-height: 300px;
+    display: flex;
     align-items: center;
     flex-direction: column;
-
-}
-
-#formulario{
-    height: 300px;
-}
-
-
-#formulario {
-    width: 100%;
-    max-width: 340px;
-    height: 300px;
-    background-color: #FFFFFF;
+    align-content: center;
+    padding: 3%;
+    gap: 10px;
+    
+    /* background-color: red; */
 }
 
 #secao-cadastro {
-    width: 100%;
-    max-width: 140px;
-    height: 100px;
-    background-color: black;
-    color: black;
+    background-color: rgb(255, 255, 255);
+   /*width: 100px;*/
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* background-color: blue; */
 }
 
 .estilo-formulario {
     border: var(--borda);
     width: 100%;
     max-width: 340px;
-    background-color: var(--cor-branca);
-
+    background-color: var(--cor-branco);
 }
 
+#formulario > div{
+    width: 100%;
+    
+}
 
+#formulario > div > label{
+    font-size: var(--tamanho-fonte-sm);
+    color: var(--cor-cinza);
+    font-weight: 500;/*aumenta e diminui a espessura da fonte */
+    padding-bottom: 4px;
+}
+
+.estilo-formulario-botao-azul{
+    width: 100%;
+}
+
+#formulario > p{
+    text-transform: uppercase;
+    font-size: var(--tamanho-fonte-sm);
+    color: var(--cor-branco);
+}
+
+#formulario > a, #secao-cadastro > p > a{
+    text-decoration: none;
+    color: blue;
+}
+
+#formulario-cadastro > p{
+    font-size: var(--tamanho-fonte-sm);
+}
+
+/* Informação do aplicativo */
 .informacao-aplicativo {
-    background-color: antiquewhite;
+    /*background-color: chocolate;*/
     font-size: var(--tamanho-fonte-sm);
     color: var(--cor-preto);
     font-weight: 400;
+    
 }
 
+/* Seção de instalação (botões) */
 #secao-instalacao {
     display: flex;
     flex-wrap: wrap;
@@ -64,6 +95,6 @@ main>div {
 }
 
 #secao-instalacao img {
-    width: 120px;
-    height: 40px;
+    width: 133; 
+    height: 39px; 
 }

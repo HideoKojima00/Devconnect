@@ -5,50 +5,52 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Felipe Fontes">
-    <meta name="description" content="site da devconnect">
-    <title>tela de login</title>
+    <meta name="description" content="Site da empresa DevConnect">
 
+    <title>Tela login - DevConnect </title>
 
-    <!-- css -->
-
-    <link rel="stylesheet" href="../styles/global.css">
+    <link rel="shortcut icon" href="../images/logo-devconnect-lg.svg" type="image/x-icon">
+    <!--CSS-->
     <link rel="stylesheet" href="../styles/login.css">
-
+    <link rel="stylesheet" href="../styles/global.css">
 </head>
 
 <body>
     <h1>Tela principal login</h1>
     <main>
         <div>
+            <!--formulário-->
             <form id="formulario" class="estilo-formulario">
-                <img src="../images/Devconnect2.svg" alt="">
+                <img src="../images/Devconnect2.svg" Logo da DevConnect>
+
                 <div>
-                    <label for=""></label>
-                    <input type="text" name="" id="">
-                </div>
-                <div>
-                    <label for=""></label>
-                    <input type="text" name="" id="">
+                    <label for="usuario">Email ou telefone:</label>
+                    <input type="text" name="usuario" id="usuario">
                 </div>
 
-                <button type="submit">Entrar</button>
+                <div>
+                    <label for="senha">Senha:</label>
+                    <input type="password" name="senha" id="senha">
+                </div>
+
+                <button type="reset">Entrar</button>
 
                 <p>ou</p>
 
                 <a href="#">Esqueceu a senha?</a>
             </form>
 
+            <!--seção de cadastro-->
             <section id="secao-cadastro" class="estilo-formulario">
-                <p>Nao tem uma conta? <span>Cadastre-se</span></p>
-
+                <p>Não tem uma conta? <a href="../pages/cadastro.html">Cadastre-se</a></p>
             </section>
 
-            <p class="informacao-aplicativo">obtenha o aplicativo</p>
+            <p class="informacao-aplicativo">Obtenha o aplicativo.</p>
 
-            <section>
-                <img src="../images/app-store.svg" alt="imagem informando para baixar na app store">
-                <img src="../images/google-play.svg" alt="imagem informando para baixar o app na play store">
-
+            <!--Seção de instalação-->
+            <section id="secao-instalacao">
+                <img src="../images/app-store.svg" alt="Imagem informando para baixar no App Store">
+                <img src="../images/google-play.svg" alt="Imagem informando para baixar no Google Play">
             </section>
         </div>
     </main>

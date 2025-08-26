@@ -1,45 +1,63 @@
 :root {
-    
-    --cor-preto: #000000;
-    --cor-cinzaEscuro: #585858;
-    --cor-cinza: #9F9F9F;
-    --cor-branca: #FFFFFF;
+    --cor-01: #DEDEDE;
+    --cor-02: #9F9F9F;
+    --cor-03: #585858;
+    --cor-04: #000000;
+    --cor-05:  rgb(49, 49, 216);
 
-    --borda: 1px solid
-        var(--cor-cinzaEscuro)
-        
-        --borda-arredondada: 2px;
-        --tamanho-fonte-lg: 20px;
-        --tamanho-fonte-lg: 16px;
-        --tamanho-fonte-lg: 14px;
-    }
+    --borda: 1px solid var(--cor-01);
+    --borda-arrendondado: 2px;
+
+    --tamanho-fonte-lg: 20px;
+    --tamanho-fonte-md: 16px;
+    --tamanho-fonte-sm: 14px;
+
+}
 
 @font-face {
-    font-family: comicneuesans;
-    src: url(../fonts/comicneuesansid/ComicNeueSansID.ttf);
+    font-family:ComicNeueSansID;
+    src: url(link href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet");
 }
-    /* Seletor Global */
+
+/* SELETOR GLOBAL */
 * {
-    font-family: "comicneuesans";
+    font-family: "ComicNeueSansID", ComicNeueSansID;
     padding: 0;
     margin: 0;
-    box-sizing: border-box; /* valor total do elemento conta tanto com espacos internos quanto externos e borda */
-    
+    box-sizing: border-box;
+    /* o valor total do tamanho do elemento contan tanto com espacos interno/externo e as bordas*/
 }
-    body{
-        background-color: var(--cor-cinza);
-    }
 
-    h1{
-        position: absolute;
-        z-index: -1;
-        opacity: 0;
-    }
+body {
+    background-color: var(--cor-03);
+}
 
-    input{
-        width: 100%;
-        height: 35px;
-        border: var(--borda);
-        background-color: var(--cor-cinza);
-    }
+h1 {
+    position: absolute;
+    /*altera a posição  */
+    z-index: -1;
+    /**/
+    opacity: 0;
+    /**/
+}
 
+/*Formulario*/
+input{
+    width: 100%;
+    height: 35px;
+    border: var(--borda);
+    background-color: var(--cor-03);
+}
+
+.Formulario-botao{
+    background-color: var(--cor-02);
+    border-right: var(--borda-arrendondado);
+    border: none;  /*Removendo a borda*/
+    height: 35px;
+    
+
+    color: var(--cor-01);
+    font-size: var(--tamanho-fonte-sm);
+    font-weight: 300;
+
+}
