@@ -1,0 +1,36 @@
+main {
+    width: 100%;
+    display: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+main>div {
+    width: 90%;
+    display: flex;
+    gap: 15px;
+    flex-direction: column;
+    align-items: center;
+}
+
+#calculos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5%;
+    color: var(--cor-01);
+}
+
+.calculadora {
+    width: 200%;
+    max-width: 340%;
+    align-items: center;
+    flex-direction: column;
+}
+
+.botao-calcular {
+    width: 50%;
+    max width: 100%;
+}

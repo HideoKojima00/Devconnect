@@ -37,7 +37,7 @@ main > div {
     border: var(--borda);
     width: 100%;
     max-width: 340px;
-    background-color: var(--cor-02);
+    background-color: var(--cor-01);
 
 }
 
@@ -103,3 +103,4 @@ main > div {
     font-family: sans-serif;
     font-size: 14px;
 }
+
