@@ -1,0 +1,53 @@
+--DDL
+CREATE DATABASE devconnect;
+GO
+
+CREATE TABLE Usuario (
+	Id INT IDENTITY(1,1) PRIMARY KEY ,
+	Nome_completo		NVARCHAR (255) UNIQUE NOT NULL,
+	Nome_usuario		NVARCHAR(50) UNIQUE NOT NULL,
+	Email				NVARCHAR(255) UNIQUE NOT NULL,
+	Senha				NVARCHAR(255) UNIQUE NOT NULL,
+	Foto_Perfil_Url		NVARCHAR(150) NULL
+	);
+SELECT * FROM Usuario;
+
+CREATE TABLE Publicacao (
+	Id INT IDENTITY(1,1) PRIMARY KEY ,
+	Descricao			NVARCHAR (255) NOT NULL,
+	Imagem_url			NVARCHAR (255) NOT  NULL,
+	Data_publicacao		DATE NOT NULL,
+	IdUsuario INT NOT NULL FOREIGN KEY REFERENCES Usuario(id)
+	);
+
+SELECT * FROM Publicacao;
+
+CREATE TABLE Comentario (
+		Id INT IDENTITY(1,1) PRIMARY KEY,
+		Texto				NVARCHAR(255) NULL,
+		Data_Comentario		DATE NOT NULL,
+		IdUsuario INT NOT NULL FOREIGN KEY REFERENCES Usuario(id),
+		IdPublicacao INT NOT NULL FOREIGN KEY REFERENCES Publicacao(id),
+		);
+
+SELECT * FROM Comentario;
+
+CREATE TABLE Seguidor(
+	id_Usuario			INT NOT NULL,
+	id_Usuario_Seguidor		INT NOT NULL,
+
+
+	);
+
+SELECT * FROM Seguidor;
+
+CREATE TABLE Curtida(
+Id INT IDENTITY (1,1) PRIMARY KEY,
+	Id_Usuario INT NOT NULL FOREIGN KEY REFERENCES Usuario(id),
+	Id_Publicacao INT NOT NULL FOREIGN KEY REFERENCES Publicacao(id)
+	);
+
+SELECT * FROM Curtida;
+
+
+DROP TABLE Curtida
