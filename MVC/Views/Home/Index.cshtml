@@ -1,0 +1,49 @@
+﻿@{
+    ViewData["Title"] = "Tela Login";
+}
+    <link rel="stylesheet" href="~/css/login.css">
+
+    <h1>Tela principal login</h1>
+    <main>
+        <div>
+            <!--formulário-->
+            <form id="formulario" class="estilo-formulario">
+                <img src="/images/Devconnect2.svg" Logo da DevConnect>
+
+                <div>
+                    <label for="usuario">Email ou telefone:</label>
+                    <input type="text" name="usuario" id="usuario">
+                </div>
+
+                <div>
+                    <label for="senha">Senha:</label>
+                    <input type="password" name="senha" id="senha">
+                </div>
+
+                <a id="botao-entrar" href="./feed.html">
+                    <img src="/images/botao entrar cinza claro.svg" alt="">
+                </a>
+
+                <p>ou</p>
+
+                <a href="#">Esqueceu a senha?</a>
+            </form>
+
+            <!--seção de cadastro-->
+            <section id="secao-cadastro" class="estilo-formulario">
+                <p>Não tem uma conta? <a href="../pages/cadastro.html">Cadastre-se</a></p>
+            </section>
+
+            <p class="informacao-aplicativo">Obtenha o aplicativo.</p>
+
+            <!--Seção de instalação-->
+            <section id="secao-instalacao">
+                <nav>
+                    <a id="Obtenha o aplicativo" href="./calc.html">
+                     <img src="/images/google-play.svg" alt="Imagem informando para baixar no Google Play">
+                    </a>
+                </nav>
+                <img src="/images/app-store.svg" alt="Imagem informando para baixar no App Store">
+            </section>
+        </div>
+    </main>
